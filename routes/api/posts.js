@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-// @route   GET api/posts/test
+// @route   GET api/posts
 // @access  Public
-router.get('/test', (req, res) => res.json({msg: "Posts Works"}));
+router.get('/', (req, res) => res.json({msg: "Posts Works"}));
 
 module.exports = router;
